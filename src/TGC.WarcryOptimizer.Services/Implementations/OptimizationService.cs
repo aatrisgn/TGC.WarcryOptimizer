@@ -34,10 +34,11 @@ internal class OptimizationService : IOptimizedListService
 		{
 			var availableUnit = expandedList.FirstOrDefault(u =>
 			{
+				var tooManyHeroTypes = u.Type == UnitType.Hero && optimizationResult.Units.Count(u => u.Type == UnitType.Hero) > 2;
 				var abovePointLine = optimizationResult.TotalPoints + u.Points < 1000;
 				var notAlreadyIncluded = optimizationResult.Units.Where(innerUnit => innerUnit.Name == u.Name).Count() < lookupDictionary[u.Name].MaximumAmounts;
 
-				return abovePointLine && notAlreadyIncluded;
+				return abovePointLine && notAlreadyIncluded && !tooManyHeroTypes;
 			});
 
 			if (availableUnit == null)
