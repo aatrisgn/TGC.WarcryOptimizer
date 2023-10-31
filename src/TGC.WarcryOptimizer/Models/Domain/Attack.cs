@@ -1,6 +1,6 @@
-﻿namespace TGC.WarcryOptimizer.Models;
+﻿namespace TGC.WarcryOptimizer.Core.Models.Domain;
 
-internal class Attack
+public class Attack
 {
 	public AttackType Type { get; set; }
 	public int MinRange { get; set; }

@@ -1,16 +1,18 @@
-﻿using TGC.WarcryOptimizer.Extensions;
+﻿using TGC.WarcryOptimizer.Core.Models.Domain;
+using TGC.WarcryOptimizer.Extensions;
 using TGC.WarcryOptimizer.Models;
+using TGC.WarcryOptimizer.Services.Abstractions;
 
-namespace TGC.WarcryOptimizer;
-internal class OptimizationService
+namespace TGC.WarcryOptimizer.Services.Implementations;
+internal class OptimizationService : IOptimizedListService
 {
-	public static OptimizedResult GetOptimizationForUnitList(IList<Unit> unitList, Dictionary<string, Unit> lookupDictionary)
+	public OptimizedResult GetOptimizationForUnitList(IList<Unit> unitList, Dictionary<string, Unit> lookupDictionary)
 	{
 		var expandedList = unitList.SelectMany(u =>
 		{
 			var innerList = new List<Unit>();
 
-			for (int i = 0; i < u.MaximumAmounts; i++)
+			for (var i = 0; i < u.MaximumAmounts; i++)
 			{
 				if (u.Type == UnitType.Hero)
 				{

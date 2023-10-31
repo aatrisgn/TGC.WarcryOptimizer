@@ -1,6 +1,6 @@
-﻿namespace TGC.WarcryOptimizer.Models;
+﻿namespace TGC.WarcryOptimizer.Core.Models.Domain;
 
-internal class Unit
+public class Unit
 {
 	public static Unit NewFighter(string name, int points, int movement, int toughness, int wounds)
 	{

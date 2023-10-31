@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TGC.WarcryOptimizer", "TGC.WarcryOptimizer\TGC.WarcryOptimizer.csproj", "{E816C44A-B514-4ED9-9E7C-6BA9C4D85A90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TGC.WarcryOptimizer.Core", "TGC.WarcryOptimizer\TGC.WarcryOptimizer.Core.csproj", "{E816C44A-B514-4ED9-9E7C-6BA9C4D85A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TGC.WarcryOptimizer.Api", "TGC.WarcryOptimizer.Api\TGC.WarcryOptimizer.Api.csproj", "{A42EDAC2-0992-4461-9C56-AB41EFCAA1EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TGC.WarcryOptimizer.Repositories", "TGC.WarcryOptimizer.Repositories\TGC.WarcryOptimizer.Repositories.csproj", "{2E4EF738-03A1-4F7B-8C89-0A2621C0D6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TGC.WarcryOptimizer.Services", "TGC.WarcryOptimizer.Services\TGC.WarcryOptimizer.Services.csproj", "{88B4A8B6-29C8-4ACB-BBA9-3CBCC3381068}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Runners", "Runners", "{D6BFEE7B-920B-4B94-B804-22AEB8A6B581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TGC.WarcryOptimizer.ConsoleApp", "TGC.WarcryOptimizer.ConsoleApp\TGC.WarcryOptimizer.ConsoleApp.csproj", "{F2B25E4F-0578-4CCF-A980-EF7D70B00E74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,29 @@ Global
 		{E816C44A-B514-4ED9-9E7C-6BA9C4D85A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E816C44A-B514-4ED9-9E7C-6BA9C4D85A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E816C44A-B514-4ED9-9E7C-6BA9C4D85A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A42EDAC2-0992-4461-9C56-AB41EFCAA1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A42EDAC2-0992-4461-9C56-AB41EFCAA1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A42EDAC2-0992-4461-9C56-AB41EFCAA1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A42EDAC2-0992-4461-9C56-AB41EFCAA1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4EF738-03A1-4F7B-8C89-0A2621C0D6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4EF738-03A1-4F7B-8C89-0A2621C0D6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4EF738-03A1-4F7B-8C89-0A2621C0D6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4EF738-03A1-4F7B-8C89-0A2621C0D6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B4A8B6-29C8-4ACB-BBA9-3CBCC3381068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B4A8B6-29C8-4ACB-BBA9-3CBCC3381068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B4A8B6-29C8-4ACB-BBA9-3CBCC3381068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B4A8B6-29C8-4ACB-BBA9-3CBCC3381068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B25E4F-0578-4CCF-A980-EF7D70B00E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B25E4F-0578-4CCF-A980-EF7D70B00E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B25E4F-0578-4CCF-A980-EF7D70B00E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B25E4F-0578-4CCF-A980-EF7D70B00E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A42EDAC2-0992-4461-9C56-AB41EFCAA1EA} = {D6BFEE7B-920B-4B94-B804-22AEB8A6B581}
+		{F2B25E4F-0578-4CCF-A980-EF7D70B00E74} = {D6BFEE7B-920B-4B94-B804-22AEB8A6B581}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A321B75-4B31-4CBB-B881-45B61984F4A9}

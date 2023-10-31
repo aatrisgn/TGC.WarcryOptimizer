@@ -1,9 +1,10 @@
-﻿using TGC.WarcryOptimizer.Models;
+﻿using TGC.WarcryOptimizer.Core.Models.Domain;
+using TGC.WarcryOptimizer.Services.Abstractions;
 
-namespace TGC.WarcryOptimizer;
-internal class DataService
+namespace TGC.WarcryOptimizer.Services.Implementations;
+internal class DataService : IUnitDataService
 {
-	public static IList<Unit> LoadSoulblightData()
+	public IList<Unit> LoadSoulblightData()
 	{
 		return new List<Unit>
 		{
@@ -19,7 +20,7 @@ internal class DataService
 		};
 	}
 
-	public static IList<Unit> LoadDuardinData()
+	public IList<Unit> LoadDuardinData()
 	{
 		return new List<Unit>
 		{
@@ -36,7 +37,7 @@ internal class DataService
 		};
 	}
 
-	public static IList<Unit> LoadSlaveToDarknessData()
+	public IList<Unit> LoadSlaveToDarknessData()
 	{
 		return new List<Unit>
 		{

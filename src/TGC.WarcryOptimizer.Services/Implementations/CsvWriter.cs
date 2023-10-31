@@ -1,12 +1,13 @@
 ﻿using System.Text;
 using TGC.WarcryOptimizer.Models;
+using TGC.WarcryOptimizer.Services.Abstractions;
 
-namespace TGC.WarcryOptimizer;
-internal class CsvWriter
+namespace TGC.WarcryOptimizer.Services.Implementations;
+internal class CsvWriter : ICsvService
 {
 	private static string[] headers = new string[] { "Points", "Avg. Hits", "Total Hits", "Avg. Strength", "Total Strength", "Avg. Move", "Total Move", "Avg. Toughness", "Total Toughness", "Avg. Wounds", "Total Wounds", "Units" };
 
-	public static void WriteToFile(IEnumerable<OptimizedResult> results)
+	public void WriteToFile(IEnumerable<OptimizedResult> results)
 	{
 		var csvBuilder = new StringBuilder();
 		csvBuilder.AppendLine(string.Join(";", headers));

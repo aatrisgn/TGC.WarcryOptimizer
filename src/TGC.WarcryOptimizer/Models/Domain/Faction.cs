@@ -1,6 +1,6 @@
-﻿namespace TGC.WarcryOptimizer.Models;
+﻿namespace TGC.WarcryOptimizer.Core.Models.Domain;
 
-internal class Faction
+public class Faction
 {
 	public required string Name { get; set; }
 	public required string SubFactionName { get; set; }

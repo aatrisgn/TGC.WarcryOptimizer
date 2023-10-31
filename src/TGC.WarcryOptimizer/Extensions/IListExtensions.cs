@@ -1,6 +1,11 @@
 ﻿namespace TGC.WarcryOptimizer.Extensions;
-internal static class IListExtensions
+public static class IListExtensions
 {
+	/// <summary>
+	/// Used to shuffle the items within a list.
+	/// </summary>
+	/// <typeparam name="T"></typeparam>
+	/// <param name="list"></param>
 	public static void Shuffle<T>(this IList<T> list)
 	{
 		var rng = new Random();

@@ -1,5 +1,7 @@
-﻿namespace TGC.WarcryOptimizer.Models;
-internal class OptimizedResult
+﻿using TGC.WarcryOptimizer.Core.Models.Domain;
+
+namespace TGC.WarcryOptimizer.Models;
+public class OptimizedResult
 {
 	public OptimizedResult()
 	{
