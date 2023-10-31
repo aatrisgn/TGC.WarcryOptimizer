@@ -35,4 +35,25 @@ internal class DataService
 			Unit.NewFighter("Gyrobomber", 220, 10, 4, 25).SetMaxAmounts(1),
 		};
 	}
+
+	public static IList<Unit> LoadSlaveToDarknessData()
+	{
+		return new List<Unit>
+		{
+			Unit.NewHero("Chaos Lord on Khardrak", 375, 8, 6, 38).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(2, 5, 5, 3, 5)),
+			Unit.NewHero("Chaos Lord", 210, 4, 5, 25).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(2, 4, 5, 2, 5)),
+			Unit.NewHero("Chaos Sorcerer Lord", 150, 4, 4, 22).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(2, 3, 3, 1, 4), Attack.NewRange(3, 7, 2, 3, 3, 6)),
+			Unit.NewHero("exalted champions", 185, 4, 5, 25).SetMaxAmounts(2).AddAttacks(Attack.NewMelee(2, 3, 5, 2, 5)),
+
+			Unit.NewFighter("Chaos Chosen", 145, 4, 5, 20).SetMaxAmounts(5).AddAttacks(Attack.NewMelee(1, 3, 5, 2, 4)),
+
+			Unit.NewFighter("Chaos Knight W. Lance", 195, 10, 6, 22).SetMaxAmounts(7).AddAttacks(Attack.NewMelee(2, 3, 4, 2, 5)),
+			Unit.NewFighter("Chaos Knight W. Weapon", 205, 10, 6, 22).SetMaxAmounts(7).AddAttacks(Attack.NewMelee(1, 4, 4, 2, 4)),
+
+			Unit.NewFighter("Chaos Warior W. 2 Weapon", 120, 4, 5, 15).SetMaxAmounts(10).AddAttacks(Attack.NewMelee(1, 4, 4, 2, 4)),
+			Unit.NewFighter("Chaos Warior W. Greatblade", 115, 4, 5, 15).SetMaxAmounts(10).AddAttacks(Attack.NewMelee(1, 3, 5, 2, 4)),
+			Unit.NewFighter("Chaos Warior W. weapon & Shield", 110, 4, 6, 15).SetMaxAmounts(10).AddAttacks(Attack.NewMelee(1, 3, 4, 2, 4)),
+			Unit.NewFighter("Chaos Warior W. Halberd & Shield", 105, 4, 5, 15).SetMaxAmounts(10).AddAttacks(Attack.NewMelee(2, 2, 4, 2, 5))
+		};
+	}
 }

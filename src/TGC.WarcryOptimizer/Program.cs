@@ -1,7 +1,7 @@
 ﻿using TGC.WarcryOptimizer;
 using TGC.WarcryOptimizer.Models;
 
-var availableUnits = DataService.LoadSoulblightData();
+var availableUnits = DataService.LoadSlaveToDarknessData();
 
 var availableUnitsDictionary = availableUnits.ToDictionary(u => u.Name, u => u);
 
