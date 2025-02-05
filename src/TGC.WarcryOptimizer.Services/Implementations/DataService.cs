@@ -20,6 +20,22 @@ internal class DataService : IUnitDataService
 		};
 	}
 
+	public IList<Unit> LoadRuinationData()
+	{
+		return new List<Unit>
+		{
+			Unit.NewHero("LORD-VIGILANT ON GRYPH-STALKER", 280, 10, 5, 38).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(1, 3, 4, 3, 6)),
+			Unit.NewHero("KNIGHT-AZYROS", 255, 10, 5, 28).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(1, 4, 4, 2, 4)),
+			Unit.NewHero("LORD-TERMINOS", 225, 4, 5, 28).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(1, 4, 5, 3, 6)),
+			Unit.NewHero("PROSECUTOR-PRIME", 205, 10, 4, 20).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(1, 4, 4, 2, 4), Attack.NewRange(3, 12, 2, 4, 2, 4)),
+			Unit.NewHero("RECLUSIAN-PRIME", 195, 4, 6, 25).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(1, 4, 5, 3, 5)),
+			Unit.NewHero("LORD-VERITANT", 190, 4, 5, 20).SetMaxAmounts(1).AddAttacks(Attack.NewMelee(1, 3, 4, 2, 4), Attack.NewRange(3, 7, 2, 4, 3, 7)),
+			Unit.NewFighter("PROSECUTOR", 180, 10, 4, 15).SetMaxAmounts(2).AddAttacks(Attack.NewMelee(1, 3, 4, 2, 4), Attack.NewRange(3, 12, 2, 4, 2, 4)),
+			Unit.NewFighter("RECLUSIAN", 160, 4, 6, 20).SetMaxAmounts(3).AddAttacks(Attack.NewMelee(1, 4, 4, 3, 5)),
+			Unit.NewFighter("GRYPH-CROW", 60, 6, 3, 6).SetMaxAmounts(3).AddAttacks(Attack.NewMelee(1, 3, 3, 1, 3))
+		};
+	}
+
 	public IList<Unit> LoadDuardinData()
 	{
 		return new List<Unit>

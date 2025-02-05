@@ -1,6 +1,5 @@
-﻿namespace TGC.WarcryOptimizer.Repositories.Extensions
+﻿namespace TGC.WarcryOptimizer.Repositories.Extensions;
+
+public static class IServiceCollectionExtensions
 {
-	public static class IServiceCollectionExtensions
-	{
-	}
 }

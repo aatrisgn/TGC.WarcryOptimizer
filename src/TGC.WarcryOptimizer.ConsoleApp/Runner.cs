@@ -19,7 +19,7 @@ internal class Runner : IRunner
 
 	public void Run()
 	{
-		var availableUnits = _unitDataService.LoadSlaveToDarknessData();
+		var availableUnits = _unitDataService.LoadRuinationData();
 
 		var availableUnitsDictionary = availableUnits.ToDictionary(u => u.Name, u => u);
 

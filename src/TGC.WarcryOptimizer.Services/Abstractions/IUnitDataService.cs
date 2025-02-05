@@ -10,5 +10,6 @@ public interface IUnitDataService
 {
 	IList<Unit> LoadSoulblightData();
 	IList<Unit> LoadDuardinData();
+	IList<Unit> LoadRuinationData();
 	IList<Unit> LoadSlaveToDarknessData();
 }
